@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOTA NOTA — Trio Électro-Acoustique</title>
+  <meta name="description"
+    content="NOTA NOTA est un trio électro-acoustique qui fusionne folk, électro, traditionnel et world music. Découvrez leurs clips, lives, dates de concerts et plus." />
+  <meta property="og:title" content="NOTA NOTA — Trio Électro-Acoustique" />
+  <meta property="og:description" content="Folk · Électro · Traditionnel · World Music" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-logo">
+      <a href="#hero" class="logo-text">NOTA NOTA</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">Le Groupe</a></li>
+      <li><a href="#videos" class="nav-link">Vidéos</a></li>
+      <li><a href="#members" class="nav-link">Membres</a></li>
+      <li><a href="#dates" class="nav-link">Dates</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" style="background-image: url('NotaNotaBW.jpg')">
+      <img src="NotaNotaBW.jpg" alt="NOTA NOTA trio" class="hero-img" aria-hidden="true" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Trio Électro-Acoustique</div>
+      <h1 class="hero-title">
+        <span class="title-line">
+          <span class="title-main">NOTA</span>
+          <span class="title-dot">·</span>
+        </span>
+        <span class="title-line">
+          <span class="title-main">NOTA</span>
+        </span>
+      </h1>
+      <p class="hero-sub">Folk &nbsp;·&nbsp; Électro &nbsp;·&nbsp; Traditionnel &nbsp;·&nbsp; World Music</p>
+      <div class="hero-actions">
+        <a href="#videos" class="btn btn-primary" id="heroWatchBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          Voir les Clips
+        </a>
+        <a href="#dates" class="btn btn-outline" id="heroDatesBtn">Prochains Concerts</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrap">
+            <img src="NotaNotaBW.jpg" alt="NOTA NOTA en concert" />
+            <div class="about-img-deco"></div>
+          </div>
+          <div class="about-stat-bar">
+            <div class="stat">
+              <span class="stat-n">3</span>
+              <span class="stat-l">Artistes</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-n">4</span>
+              <span class="stat-l">Univers musicaux</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-n">∞</span>
+              <span class="stat-l">Émotions</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">Le Groupe</div>
+          <h2 class="section-title">Une rencontre entre<br /><em>les mondes</em></h2>
+          <p class="about-desc">
+            NOTA NOTA est un trio électro-acoustique né de la rencontre de trois esprits créatifs aux horizons musicaux
+            différents. Ensemble, ils tissent une toile sonore unique où se croisent les traditions folk, les textures
+            électroniques, les mélodies du monde et les rythmes primitifs du cajón.
+          </p>
+          <p class="about-desc">
+            Leur musique est un voyage — organique et électrique à la fois — portée par des voix qui s'entrelacent, une
+            flûte qui s'envole et une guitare qui raconte. Chaque concert est une expérience sensorielle singulière.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Folk</span>
+            <span class="tag">Électro</span>
+            <span class="tag">World Music</span>
+            <span class="tag">Traditionnel</span>
+            <span class="tag">Acoustique</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEOS ── -->
+  <section id="videos" class="videos section section-dark">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent);">Vidéos</div>
+      <h2 class="section-title">Clips &amp; Lives</h2>
+      <p class="section-sub">Plongez dans l'univers visuel et sonore de NOTA NOTA</p>
+
+      <div class="video-tabs">
+        <button class="vtab active" data-tab="clips" id="tabClips">Clips</button>
+        <button class="vtab" data-tab="lives" id="tabLives">Lives</button>
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+        <!-- CLIPS -->
+        <div class="video-panel active" data-panel="clips">
+          <div class="vgrid">
+            <div class="video-card featured" id="videoCard1">
+              <div class="video-thumb">
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLexmple" title="NOTA NOTA - Clip Principal"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+                <div class="video-placeholder" id="vp1">
+                  <div class="vp-inner">
+                    <div class="play-btn-large" id="playBtn1">
+                      <svg viewBox="0 0 24 24" fill="white" width="40" height="40">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div class="vp-label">
+                      <span class="vp-tag">Clip Officiel</span>
+                      <span class="vp-title">Añoranza</span>
+                      <span class="vp-sub">NOTA NOTA · 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-card" id="videoCard2">
+              <div class="video-thumb">
+                <div class="video-placeholder" id="vp2"
+                  style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                  <div class="vp-inner">
+                    <div class="play-btn-large" id="playBtn2">
+                      <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div class="vp-label">
+                      <span class="vp-tag">Clip</span>
+                      <span class="vp-title">Raíces</span>
+                      <span class="vp-sub">NOTA NOTA · 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-card" id="videoCard3">
+              <div class="video-thumb">
+                <div class="video-placeholder" id="vp3"
+                  style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);">
+                  <div class="vp-inner">
+                    <div class="play-btn-large" id="playBtn3">
+                      <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div class="vp-label">
+                      <span class="vp-tag">Clip</span>
+                      <span class="vp-title">Wanderer</span>
+                      <span class="vp-sub">NOTA NOTA · 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIVES -->
+        <div class="video-panel" data-panel="lives">
+          <div class="vgrid">
+            <div class="video-card featured" id="videoCardL1">
+              <div class="video-thumb">
+                <div class="video-placeholder" id="vpL1"
+                  style="background: linear-gradient(135deg, #1c0a00 0%, #3d1a00 100%);">
+                  <div class="vp-inner">
+                    <div class="play-btn-large" id="playBtnL1">
+                      <svg viewBox="0 0 24 24" fill="white" width="40" height="40">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div class="vp-label">
+                      <span class="vp-tag" style="background: #ff4500;">Live</span>
+                      <span class="vp-title">Festival des Cultures du Monde</span>
+                      <span class="vp-sub">NOTA NOTA · Live 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-card" id="videoCardL2">
+              <div class="video-thumb">
+                <div class="video-placeholder" id="vpL2"
+                  style="background: linear-gradient(135deg, #001a0d 0%, #003d1a 100%);">
+                  <div class="vp-inner">
+                    <div class="play-btn-large" id="playBtnL2">
+                      <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div class="vp-label">
+                      <span class="vp-tag" style="background: #00a651;">Live</span>
+                      <span class="vp-title">Café-Concert Acoustique</span>
+                      <span class="vp-sub">NOTA NOTA · Session Intime</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-card" id="videoCardL3">
+              <div class="video-thumb">
+                <div class="video-placeholder" id="vpL3"
+                  style="background: linear-gradient(135deg, #1a001a 0%, #3d003d 100%);">
+                  <div class="vp-inner">
+                    <div class="play-btn-large" id="playBtnL3">
+                      <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div class="vp-label">
+                      <span class="vp-tag" style="background: #9b59b6;">Live</span>
+                      <span class="vp-title">Session Studio</span>
+                      <span class="vp-sub">NOTA NOTA · Behind The Scenes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-cta">
+        <a href="https://www.youtube.com/@notanota" target="_blank" rel="noopener" class="btn btn-outline-light"
+          id="youtubeBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+          </svg>
+          Voir toutes les vidéos sur YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MEMBERS ── -->
+  <section id="members" class="members section">
+    <div class="container">
+      <div class="section-label">Les Artistes</div>
+      <h2 class="section-title">Les trois âmes<br /><em>du trio</em></h2>
+      <div class="members-grid">
+
+        <!-- Hicham -->
+        <div class="member-card" id="memberHicham">
+          <div class="member-photo-wrap">
+            <img src="Hicham2.png" alt="Hicham - Guitare et Chant" class="member-photo" />
+            <div class="member-photo-overlay">
+              <div class="member-instrument-icon">
+                <svg viewBox="0 0 64 64" fill="none" width="36" height="36">
+                  <path d="M20 44 C20 44 10 50 8 54 C6 58 10 60 14 58 C18 56 24 46 24 46" stroke="white"
+                    stroke-width="2.5" stroke-linecap="round" />
+                  <ellipse cx="22" cy="42" rx="10" ry="7" transform="rotate(-45 22 42)" stroke="white"
+                    stroke-width="2" />
+                  <line x1="32" y1="32" x2="52" y2="12" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="52" cy="12" r="4" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Hicham</h3>
+            <div class="member-role">Guitare &amp; Chant</div>
+            <p class="member-bio">Hicham est l’auteur-compositeur-chanteur du groupe. Son univers musical se construit à
+              la croisée de ses origines marocaines et d’une culture musicale marquée par le rock, la folk et
+              l'électro-pop. Il
+              aime créer un équilibre subtil entre douceur acoustique et textures électro, sans qu’aucune influence ne
+              prenne le dessus sur l’autre. Porté par l’innovation et la recherche de nouveaux sons, il façonne une
+              musique sensible, moderne et ouverte, nourrie par le croisement des esthétiques.</p>
+            <div class="member-socials">
+              <a href="#" class="social-dot" aria-label="Instagram Hicham" id="socialHichamIG">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soizic -->
+        <div class="member-card featured-member" id="memberSoizic">
+          <div class="member-photo-wrap">
+            <img src="Soizic.JPG" alt="Soizic - Flûte et Chant" class="member-photo" />
+            <div class="member-photo-overlay">
+              <div class="member-instrument-icon">
+                <svg viewBox="0 0 64 64" fill="none" width="36" height="36">
+                  <line x1="12" y1="32" x2="52" y2="20" stroke="white" stroke-width="3" stroke-linecap="round" />
+                  <circle cx="20" cy="30" r="2.5" fill="white" />
+                  <circle cx="28" cy="28" r="2.5" fill="white" />
+                  <circle cx="36" cy="26" r="2.5" fill="white" />
+                  <circle cx="44" cy="24" r="2.5" fill="white" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Soizic</h3>
+            <div class="member-role">Flûte &amp; Chant</div>
+            <p class="member-bio">Flûtiste et chanteuse, Soizic insuffle au trio une couleur celtique et aérienne. Sa
+              voix et sa flûte dialoguent comme deux langues qui se comprennent sans se traduire, portant chaque
+              composition vers les nuages.</p>
+            <div class="member-socials">
+              <a href="#" class="social-dot" aria-label="Instagram Soizic" id="socialSoizicIG">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ramon -->
+        <div class="member-card" id="memberRamon">
+          <div class="member-photo-wrap">
+            <img src="Ramon3.png" alt="Ramon - Cajón" class="member-photo" />
+            <div class="member-photo-overlay">
+              <div class="member-instrument-icon">
+                <svg viewBox="0 0 64 64" fill="none" width="36" height="36">
+                  <rect x="22" y="14" width="20" height="28" rx="3" stroke="white" stroke-width="2.5" />
+                  <ellipse cx="32" cy="28" rx="6" ry="4" stroke="white" stroke-width="2" />
+                  <line x1="32" y1="42" x2="28" y2="52" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                  <line x1="32" y1="42" x2="36" y2="52" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Ramon</h3>
+            <div class="member-role">Cajón</div>
+            <p class="member-bio">Percussionniste et âme rythmique du groupe, Ramon fait parler le cajón avec une
+              sensibilité rare. Ses rythmes ancrent le trio dans la terre tout en lui donnant l'élan de s'envoler vers
+              l'universel.</p>
+            <div class="member-socials">
+              <a href="#" class="social-dot" aria-label="Instagram Ramon" id="socialRamonIG">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DATES ── -->
+  <section id="dates" class="dates section section-dark">
+    <div class="container">
+      <div class="section-label" style="color: var(--accent);">Agenda</div>
+      <h2 class="section-title">Prochains Concerts</h2>
+      <p class="section-sub">Retrouvez NOTA NOTA près de chez vous</p>
+
+      <div class="dates-list" id="datesList">
+
+        <div class="date-item" id="date1">
+          <div class="date-info">
+            <div class="date-cal">
+              <span class="date-day">18</span>
+              <span class="date-month">Avr</span>
+            </div>
+            <div class="date-details">
+              <h3 class="date-venue">Le Périscope</h3>
+              <p class="date-city">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Lyon, France
+              </p>
+              <p class="date-desc">Festival des Musiques du Monde · 20h30</p>
+            </div>
+          </div>
+          <div class="date-actions">
+            <span class="date-badge available">Places dispo</span>
+            <a href="#" class="btn btn-sm btn-outline-light" id="ticketDate1">Réserver</a>
+          </div>
+        </div>
+
+        <div class="date-item" id="date2">
+          <div class="date-info">
+            <div class="date-cal">
+              <span class="date-day">25</span>
+              <span class="date-month">Avr</span>
+            </div>
+            <div class="date-details">
+              <h3 class="date-venue">La Maroquinerie</h3>
+              <p class="date-city">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Paris, France
+              </p>
+              <p class="date-desc">Concert Acoustique · 19h00</p>
+            </div>
+          </div>
+          <div class="date-actions">
+            <span class="date-badge available">Places dispo</span>
+            <a href="#" class="btn btn-sm btn-outline-light" id="ticketDate2">Réserver</a>
+          </div>
+        </div>
+
+        <div class="date-item" id="date3">
+          <div class="date-info">
+            <div class="date-cal">
+              <span class="date-day">10</span>
+              <span class="date-month">Mai</span>
+            </div>
+            <div class="date-details">
+              <h3 class="date-venue">Café de la Danse</h3>
+              <p class="date-city">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Bordeaux, France
+              </p>
+              <p class="date-desc">Soirée World Music · 21h00</p>
+            </div>
+          </div>
+          <div class="date-actions">
+            <span class="date-badge sold-out">Complet</span>
+            <a href="#" class="btn btn-sm btn-disabled" id="ticketDate3">Liste d'attente</a>
+          </div>
+        </div>
+
+        <div class="date-item" id="date4">
+          <div class="date-info">
+            <div class="date-cal">
+              <span class="date-day">24</span>
+              <span class="date-month">Mai</span>
+            </div>
+            <div class="date-details">
+              <h3 class="date-venue">Festival Terres Noires</h3>
+              <p class="date-city">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Corrèze, France
+              </p>
+              <p class="date-desc">Scène principale · 18h30</p>
+            </div>
+          </div>
+          <div class="date-actions">
+            <span class="date-badge available">Places dispo</span>
+            <a href="#" class="btn btn-sm btn-outline-light" id="ticketDate4">Réserver</a>
+          </div>
+        </div>
+
+        <div class="date-item" id="date5">
+          <div class="date-info">
+            <div class="date-cal">
+              <span class="date-day">07</span>
+              <span class="date-month">Jun</span>
+            </div>
+            <div class="date-details">
+              <h3 class="date-venue">Théâtre Jean Vilar</h3>
+              <p class="date-city">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Montpellier, France
+              </p>
+              <p class="date-desc">Concert Création · 20h00</p>
+            </div>
+          </div>
+          <div class="date-actions">
+            <span class="date-badge soon">Bientôt</span>
+            <a href="#" class="btn btn-sm btn-outline-light" id="ticketDate5">Réserver</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOCIAL / PRESSE ── -->
+  <section id="social" class="social-section section">
+    <div class="container">
+      <div class="section-label">Réseaux</div>
+      <h2 class="section-title">Suivez<br /><em>l'aventure</em></h2>
+      <div class="social-grid">
+        <a href="https://www.youtube.com/@notanota" target="_blank" rel="noopener" class="social-card"
+          id="socialYoutube">
+          <div class="social-icon" style="background: linear-gradient(135deg, #ff0000, #cc0000);">
+            <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+              <path
+                d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <span class="social-name">YouTube</span>
+            <span class="social-handle">@notanota</span>
+          </div>
+          <div class="social-arrow">→</div>
+        </a>
+        <a href="https://www.instagram.com/notanota" target="_blank" rel="noopener" class="social-card"
+          id="socialInstagram">
+          <div class="social-icon"
+            style="background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+            <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">@notanota</span>
+          </div>
+          <div class="social-arrow">→</div>
+        </a>
+        <a href="https://www.facebook.com/notanota" target="_blank" rel="noopener" class="social-card"
+          id="socialFacebook">
+          <div class="social-icon" style="background: linear-gradient(135deg, #1877f2, #0d5dbf);">
+            <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <span class="social-name">Facebook</span>
+            <span class="social-handle">Nota Nota Officiel</span>
+          </div>
+          <div class="social-arrow">→</div>
+        </a>
+        <a href="https://open.spotify.com" target="_blank" rel="noopener" class="social-card" id="socialSpotify">
+          <div class="social-icon" style="background: linear-gradient(135deg, #1db954, #158f3e);">
+            <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+              <path
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <span class="social-name">Spotify</span>
+            <span class="social-handle">Nota Nota</span>
+          </div>
+          <div class="social-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact section section-dark">
+    <div class="container">
+      <div class="contact-centered">
+        <div class="section-label" style="color: var(--accent);">Contact</div>
+        <h2 class="section-title">Travaillons<br /><em>ensemble</em></h2>
+        <p class="contact-intro">Pour des demandes de booking, partenariats, presse ou toute autre question, n'hésitez
+          pas à nous contacter directement par email.</p>
+
+        <div class="contact-infos">
+          <div class="contact-info-item" id="contactEmail">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <span class="ci-label">Email</span>
+              <a href="mailto:contact@notanota.com" class="ci-value">contact@notanota.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item" id="contactBooking">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42A2 2 0 0 1 3.59 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <span class="ci-label">Booking</span>
+              <a href="mailto:booking@notanota.com" class="ci-value">booking@notanota.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-text">NOTA NOTA</span>
+          <p class="footer-tagline">Trio Électro-Acoustique</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Le Groupe</a>
+          <a href="#videos">Vidéos</a>
+          <a href="#members">Membres</a>
+          <a href="#dates">Dates</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.youtube.com/@notanota" target="_blank" rel="noopener" aria-label="YouTube" id="footerYT">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/notanota" target="_blank" rel="noopener" aria-label="Instagram"
+            id="footerIG">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/notanota" target="_blank" rel="noopener" aria-label="Facebook"
+            id="footerFB">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NOTA NOTA. Tous droits réservés.</p>
+        <p class="footer-credits">Folk · Électro · World</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
